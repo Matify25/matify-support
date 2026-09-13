@@ -17,6 +17,10 @@ body:
         rarely needs any of them; describe the shape of your setup rather than
         its names.
 
+        **A suspected security vulnerability is never a public issue** — not even
+        one framed as "the app should prevent X". Close this form and email
+        <mira.maty@web.de>.
+
         Worth checking first: the
         [known limitations page](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/known-limitations/)
         lists things the app deliberately does not do and, for each, why. Some
