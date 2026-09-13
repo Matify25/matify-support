@@ -1,0 +1,36 @@
+# A blank issue has no template, so it arrives without the app name, the version
+# or the environment - and the first reply has to ask for all three. Every route
+# in is therefore a form or a link.
+blank_issues_enabled: false
+
+contact_links:
+  - name: Report a security vulnerability (private, not a public issue)
+    url: https://github.com/Matify25/matify-support/security/policy
+    about: >-
+      Never open a public issue for a suspected vulnerability. Email
+      mira.maty@web.de instead. Disclosing a flaw publicly puts every customer
+      running the app at risk before a fix exists.
+
+  - name: Access Auditor for Jira - documentation
+    url: https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/
+    about: >-
+      Setup, every screen, every permission scope, the known limits, and a
+      troubleshooting page listing each error code the app can show.
+
+  - name: Access Auditor for Jira - error codes and troubleshooting
+    url: https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/troubleshooting/
+    about: >-
+      If the app showed you a code such as MAA-E401 or MAA-L001, the answer is
+      probably here and needs no ticket.
+
+  - name: Access Auditor for Jira - security and privacy statement
+    url: https://matify25.github.io/matify-public/apps/access-auditor-for-jira/security-privacy/
+    about: >-
+      What the app reads, what it stores, for how long, where it is hosted, and
+      what never leaves Atlassian. For your security review.
+
+  - name: Email support directly
+    url: mailto:mira.maty@web.de
+    about: >-
+      If your question involves anything you would rather not post in public,
+      write instead of opening an issue.

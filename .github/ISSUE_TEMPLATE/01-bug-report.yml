@@ -1,0 +1,143 @@
+name: Bug report
+description: Something in a Matify app behaves incorrectly, or does not work at all.
+title: "[Bug] "
+labels: ["type: bug", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Before you fill this in
+
+        **This is a public repository.** Anyone can read what you write here, and
+        it stays readable in the history even after an edit.
+
+        **Never include** a password, an API token, a Jira account ID, an email
+        address, a customer name, issue content, an internal hostname, or
+        anything else your organisation would not publish. Nothing here needs
+        them — if a reproduction genuinely cannot be described without one,
+        email <mira.maty@web.de> instead.
+
+        **A suspected security vulnerability is never a public issue.** Close
+        this form and email <mira.maty@web.de>.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      description: Which Matify app is this about?
+      options:
+        - Access Auditor for Jira
+        - Another Matify app (name it in the description)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: >-
+        In Access Auditor, open the **Diagnostics** tab; the version is at the
+        top. If you cannot reach the app at all, write "cannot open the app".
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Site size
+      description: >-
+        Roughly how many licensed users does the Jira site have? Several
+        behaviours — collection caps, scan duration, rate limiting — depend on
+        this, so it is often the first thing that explains a report.
+      options:
+        - 1-10 users
+        - 11-100 users
+        - 101-250 users
+        - 251-1,000 users
+        - 1,001-2,500 users
+        - 2,501-5,000 users
+        - 5,001-10,000 users
+        - More than 10,000 users
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong
+      description: One or two sentences. The detail goes in the fields below.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Numbered, starting from opening the app. Describe screens and controls
+        by their visible names rather than by project or group names.
+      value: |
+        1. Open the app from Jira Settings → Apps
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What you expected to happen at the last step.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: >-
+        What happened instead. If the screen showed a message, quote it — but
+        remove any project, group or person named in it.
+    validations:
+      required: true
+
+  - type: input
+    id: error-code
+    attributes:
+      label: Error code
+      description: >-
+        If a code was shown, put it here. Each one is explained on the
+        troubleshooting page, and several are configuration rather than defects.
+      placeholder: "MAA-E500"
+    validations:
+      required: false
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostic report
+      description: >-
+        **Diagnostics** tab → **Copy diagnostic report**, then paste it here. The
+        report is built to carry no personal data and no credentials — no project
+        name, group name, account identifier or permission holder appears in it —
+        so it is safe to post in public, and it answers most of the questions a
+        first reply would otherwise have to ask.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before submitting
+      options:
+        - label: >-
+            I have not included any password, API token, personal data,
+            confidential customer data or other secret in this report.
+          required: true
+        - label: >-
+            This is not a security vulnerability. (If it is, close this and
+            email mira.maty@web.de instead.)
+          required: true

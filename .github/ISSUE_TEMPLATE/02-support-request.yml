@@ -1,0 +1,122 @@
+name: Support request
+description: A question about how a Matify app works, how to configure it, or what it reports.
+title: "[Support] "
+labels: ["type: support", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Before you fill this in
+
+        **This is a public repository.** Anyone can read what you write here, and
+        it stays readable in the history even after an edit.
+
+        **Never include** a password, an API token, a Jira account ID, an email
+        address, a customer name, issue content, an internal hostname, or
+        anything else your organisation would not publish. If your question
+        cannot be asked without one, email <mira.maty@web.de> instead.
+
+        **A suspected security vulnerability is never a public issue.** Close
+        this form and email <mira.maty@web.de>.
+
+        Two pages answer most questions faster than a ticket does: the
+        [troubleshooting page](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/troubleshooting/),
+        which lists every error code and what to do about it, and the
+        [FAQ](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/faq/).
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Access Auditor for Jira
+        - Another Matify app (name it in the question)
+        - Before buying — a question about what the app does
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: >-
+        **Diagnostics** tab, at the top. Leave as "not installed" if you are
+        asking before buying.
+      placeholder: "1.0.0"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Site size
+      description: >-
+        Roughly how many licensed users. Collection caps, scan duration and rate
+        limiting all scale with this, so it often changes the answer.
+      options:
+        - 1-10 users
+        - 11-100 users
+        - 101-250 users
+        - 251-1,000 users
+        - 1,001-2,500 users
+        - 2,501-5,000 users
+        - 5,001-10,000 users
+        - More than 10,000 users
+        - Not sure
+        - Not applicable — asking before buying
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: >-
+        What you are trying to achieve, and where you got stuck. Saying what you
+        expected to see usually gets a better answer than describing the screen
+        alone.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have already tried
+      description: >-
+        Optional, but it stops the reply suggesting something you have ruled out.
+    validations:
+      required: false
+
+  - type: input
+    id: error-code
+    attributes:
+      label: Error code
+      description: If the app showed a code, put it here.
+      placeholder: "MAA-L001"
+    validations:
+      required: false
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostic report
+      description: >-
+        Optional. **Diagnostics** tab → **Copy diagnostic report**. It carries no
+        personal data and no credentials, so it is safe to post in public.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before submitting
+      options:
+        - label: >-
+            I have not included any password, API token, personal data,
+            confidential customer data or other secret in this request.
+          required: true
+        - label: >-
+            This is not a security vulnerability. (If it is, close this and
+            email mira.maty@web.de instead.)
+          required: true

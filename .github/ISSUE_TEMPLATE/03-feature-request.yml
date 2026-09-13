@@ -1,0 +1,121 @@
+name: Feature request
+description: Something a Matify app should be able to do and cannot.
+title: "[Feature] "
+labels: ["type: feature", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Before you fill this in
+
+        **This is a public repository.** Anyone can read what you write here, and
+        it stays readable in the history even after an edit.
+
+        **Never include** a password, an API token, a Jira account ID, an email
+        address, a customer name, issue content, an internal hostname, or
+        anything else your organisation would not publish. A feature request
+        rarely needs any of them; describe the shape of your setup rather than
+        its names.
+
+        Worth checking first: the
+        [known limitations page](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/known-limitations/)
+        lists things the app deliberately does not do and, for each, why. Some
+        are not oversights but boundaries of what the Jira Cloud API exposes to
+        any app — those cannot be built however much they are wanted, and the
+        page says which.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Access Auditor for Jira
+        - Another Matify app (name it below)
+        - A new app idea
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: The version you are using, if you are using it.
+      placeholder: "1.0.0"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Site size
+      description: >-
+        Whether a request makes sense often depends on scale — a feature that is
+        pleasant at 50 users can be unusable at 5,000.
+      options:
+        - 1-10 users
+        - 11-100 users
+        - 101-250 users
+        - 251-1,000 users
+        - 1,001-2,500 users
+        - 2,501-5,000 users
+        - 5,001-10,000 users
+        - More than 10,000 users
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: >-
+        What are you trying to accomplish, and what stops you today? Describe the
+        need rather than the solution — the best answer is sometimes a different
+        feature from the one that comes to mind first.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like the app to do
+      description: Your proposed behaviour, as concretely as you can put it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How you handle it now
+      description: >-
+        Optional. A description of the manual work this would replace is the
+        single most useful thing for judging how much it matters.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How much it matters to you
+      options:
+        - Blocking — we cannot use the app properly without it
+        - Significant — we work around it and the workaround costs real time
+        - Useful — it would be an improvement
+        - Idea — take it or leave it
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before submitting
+      options:
+        - label: >-
+            I have not included any password, API token, personal data,
+            confidential customer data or other secret in this request.
+          required: true
+        - label: >-
+            I understand that a request here is not a commitment to build it,
+            and that some requests are impossible because the Jira Cloud API
+            does not expose the data they would need.
+          required: true
