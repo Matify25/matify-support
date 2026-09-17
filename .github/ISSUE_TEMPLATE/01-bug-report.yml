@@ -27,6 +27,7 @@ body:
       description: Which Matify app is this about?
       options:
         - Access Auditor for Jira
+        - Space Blueprints for Confluence
         - Another Matify app (name it in the description)
     validations:
       required: true
