@@ -22,7 +22,7 @@ body:
         <mira.maty@web.de>.
 
         Worth checking first: the
-        [known limitations page](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/known-limitations/)
+        known limitations page for your app, linked from [the Matify apps page](https://matify25.github.io/matify-public/apps/)
         lists things the app deliberately does not do and, for each, why. Some
         are not oversights but boundaries of what the Jira Cloud API exposes to
         any app — those cannot be built however much they are wanted, and the
@@ -34,6 +34,7 @@ body:
       label: App
       options:
         - Access Auditor for Jira
+        - Space Blueprints for Confluence
         - Another Matify app (name it below)
         - A new app idea
     validations:
