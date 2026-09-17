@@ -20,9 +20,9 @@ body:
         this form and email <mira.maty@web.de>.
 
         Two pages answer most questions faster than a ticket does: the
-        [troubleshooting page](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/troubleshooting/),
+        troubleshooting page for your app (linked from [the app's documentation](https://matify25.github.io/matify-public/apps/)),
         which lists every error code and what to do about it, and the
-        [FAQ](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/faq/).
+        its FAQ. Both are listed on [the Matify apps page](https://matify25.github.io/matify-public/apps/).
 
   - type: dropdown
     id: app
@@ -30,6 +30,7 @@ body:
       label: App
       options:
         - Access Auditor for Jira
+        - Space Blueprints for Confluence
         - Another Matify app (name it in the question)
         - Before buying — a question about what the app does
     validations:
