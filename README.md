@@ -3,12 +3,15 @@
 Public support, bug tracking and feature requests for the Atlassian Marketplace
 apps published by **Matify**.
 
-You do not need to buy anything to open an issue here, and you do not need a
-Jira administrator to do it for you. A GitHub account is the only requirement.
+You do not need to buy anything to ask for support, and you do not need an
+account of any kind: the [ticket form](https://matify25.github.io/matify-public/support/) works for everyone. A
+public issue in this repository needs a GitHub account; reading the tracker does
+not.
 
 | | |
 |---|---|
-| **Ask a question or report a problem** | [Open an issue](https://github.com/Matify25/matify-support/issues/new/choose) |
+| **Open a ticket — no account needed** | [Ticket form](https://matify25.github.io/matify-public/support/) — private, sent from your own email program |
+| **Open a public issue** | [New issue](https://github.com/Matify25/matify-support/issues/new/choose) — needs a GitHub account |
 | **See what is already reported** | [All issues](https://github.com/Matify25/matify-support/issues) |
 | **Email support** | <mira.maty@web.de> |
 | **Report a security vulnerability** | <mira.maty@web.de> — **never** as a public issue. See [SECURITY.md](SECURITY.md). |

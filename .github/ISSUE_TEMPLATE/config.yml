@@ -4,6 +4,12 @@
 blank_issues_enabled: false
 
 contact_links:
+  - name: Open a ticket without a GitHub account
+    url: https://matify25.github.io/matify-public/support/
+    about: >-
+      A form on the Matify site. Your own email program sends the ticket, it is
+      private, and no account of any kind is needed. Also the right route for a
+      security report.
   - name: Report a security vulnerability (private, not a public issue)
     url: https://github.com/Matify25/matify-support/security/policy
     about: >-
