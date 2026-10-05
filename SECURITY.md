@@ -30,10 +30,17 @@ test against a site that is not your own.
 ## What happens next
 
 Matify is a small publisher, so there is no round-the-clock security desk. What
-you can expect is an acknowledgement that a person has read the report, an
+you can expect is an acknowledgement within **1 business day** that a person has
+read the report — the same as a Critical ticket in the
+[service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/) — then an
 assessment of whether it is exploitable and how far it reaches, a fix released
 through the Atlassian Marketplace, and credit in the release notes if you would
 like it.
+
+Fix timelines follow Atlassian's
+[Security Bug Fix Policy for Marketplace apps](https://developer.atlassian.com/platform/marketplace/security-bugfix-policy/),
+which at the time of writing requires a critical vulnerability (CVSS 9.0 or
+above) in a cloud app to be fixed within 10 days.
 
 Please give a reasonable window for a fix to ship before disclosing publicly.
 The apps are Atlassian Forge apps, so a fix reaches every installation through

@@ -49,6 +49,7 @@ most likely to be a risk.
 - [Known limitations](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/known-limitations/)
 - [Security and privacy statement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/security-privacy/)
 - [Privacy policy](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/privacy/)
+- [Service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/)
 
 ## Which form to use
 
@@ -106,26 +107,30 @@ private vulnerability reporting from the **Security** tab. Full policy in
 
 ## What to expect
 
-Matify is a small publisher and support is handled by a person, not a rota.
-Setting expectations honestly is more useful than a number nobody can keep:
+Support is handled by a person, not a rota, and the commitments are set out in
+the **[service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/)**. In short:
 
-- Issues are read on **business days**, Central European Time.
-- A security report gets attention ahead of everything else.
-- A bug report that arrives with steps, expected and actual behaviour, and a
-  diagnostic report is usually answered on the first reply rather than the
-  third. The forms ask for exactly those things for that reason.
-- A question already answered in the documentation gets a link to it. That is
-  not a brush-off — it is the fastest correct answer, and the page is kept
-  current.
+**Hours:** Monday to Friday, 09:00–17:00 Central European Time, excluding
+public holidays. Response times count these hours only.
 
-**No contractual response time is promised here.** Where a support commitment
-exists it is the one on the Atlassian Marketplace listing and in the end user
-terms, not this page. If you need a guaranteed response time, ask by email
-before purchasing rather than assuming one.
+| Severity | First response within |
+|---|---|
+| **Critical** — the app cannot be used at all, or a suspected security vulnerability | 1 business day |
+| **High** — a core function fails and there is no workaround | 2 business days |
+| **Normal** — a workaround exists, or a question about configuration | 3 business days |
+| **Low** — cosmetic, documentation, feature requests | 5 business days |
 
-Apps are distributed as Atlassian Forge apps, so a fix reaches every installation
-through Atlassian. There is no upgrade for you to perform and no version for you
-to chase.
+A first response is a reply written by a person — there is no automated
+acknowledgement. Security fixes follow Atlassian's Security Bug Fix Policy for
+Marketplace apps; the timelines are on the SLA page.
+
+A bug report that arrives with steps, expected and actual behaviour, and a
+diagnostic report is usually answered on the first reply rather than the third.
+The forms ask for exactly those things for that reason.
+
+Apps are distributed as Atlassian Forge apps, so a fix that does not change the
+app's permissions reaches every installation automatically. There is no upgrade
+for you to perform.
 
 ## Labels
 
