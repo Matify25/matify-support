@@ -49,7 +49,7 @@ most likely to be a risk.
 - [Known limitations](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/docs/known-limitations/)
 - [Security and privacy statement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/security-privacy/)
 - [Privacy policy](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/privacy/)
-- [Service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/)
+- [Service level agreement](https://matify25.github.io/matify-public/sla/)
 
 ## Which form to use
 
@@ -108,7 +108,7 @@ private vulnerability reporting from the **Security** tab. Full policy in
 ## What to expect
 
 Support is handled by a person, not a rota, and the commitments are set out in
-the **[service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/)**. In short:
+the **[service level agreement](https://matify25.github.io/matify-public/sla/)**. In short:
 
 **Hours:** Monday to Friday, 09:00–17:00 Central European Time, excluding
 public holidays. Response times count these hours only.

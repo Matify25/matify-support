@@ -32,7 +32,7 @@ test against a site that is not your own.
 Matify is a small publisher, so there is no round-the-clock security desk. What
 you can expect is an acknowledgement within **1 business day** that a person has
 read the report — the same as a Critical ticket in the
-[service level agreement](https://matify25.github.io/matify-public/apps/access-auditor-for-jira/sla/) — then an
+[service level agreement](https://matify25.github.io/matify-public/sla/) — then an
 assessment of whether it is exploitable and how far it reaches, a fix released
 through the Atlassian Marketplace, and credit in the release notes if you would
 like it.
